@@ -77,7 +77,7 @@ const translations: Record<Lang, Translation> = {
     brandTag: "Manpower • Visa • Student Consultancy",
     officeTag: "Consultancy agency with offices in Qatar and Bangladesh",
     locationsLabel: "Locations",
-    locations: ["Doha, Qatar — ZIP 00000", "Gudaraghat, Badda, Dhaka — ZIP 1212"],
+    locations: ["Level 22, Tornado Tower, West Bay, Doha, Qatar — ZIP 00000", "Gudaraghat, Badda, Dhaka — ZIP 1212"],
     heroBadge: "Qatar & Bangladesh consultancy support",
     heroTitle: "DYUTI Group for Qatar manpower, work visa, free visa, and student consultancy",
     heroText: "We help clients with manpower processing for Qatar, delivery work visa packages, free visa support, admission guidance, scholarship counselling, tuition waiver support, and coaching support for IELTS, GRE, and TOEFL.",
@@ -127,7 +127,7 @@ const translations: Record<Lang, Translation> = {
       { title: "Free Visa Package", price: "QAR 12,000", description: "Structured visa support package for candidates seeking opportunities in Qatar.", includes: ["Free visa processing", "QID included", "Medical included", "BMET card included", "Flight not included"] }
     ],
     educationServices: ["Student consultancy for Finland", "Student consultancy for the Netherlands", "Student consultancy for Italy", "Student consultancy for Austria", "Admission consultancy", "Student visa consultancy", "Scholarship counselling", "IELTS coaching", "GRE coaching", "TOEFL coaching"],
-    manpowerDocs: ["White background passport-size photo softcopy", "Clear scanned copy of the information page of the passport"],
+    manpowerDocs: ["Clear scanned copy of passport", "White background passport-size soft copy photo", "Clear scanned copy of the information page of the passport"],
     studentDocs: ["English proficiency documents", "Clear scanned copy of the information page of the passport", "High school marksheet, transcript, and certificate of public exams", "Bachelor’s and Master’s marksheet, transcript, and certificate, if available"],
     waiverPackages: [
       { name: "Full Tuition Waiver", price: "QAR 15,000", firstPayment: "QAR 7,500 after scholarship decision", secondPayment: "Remaining QAR 7,500 after visa" },
@@ -141,7 +141,7 @@ const translations: Record<Lang, Translation> = {
       { q: "How long does student consultancy processing usually take?", a: "The student pathway can take around 6 months to 1 year, depending on the destination and institution." }
     ],
     offices: [
-      { title: "Qatar Office", city: "Doha, Qatar", address: "Madinat South Khalifa, Zone 34", zip: "00000", whatsappLabel: "Qatar WhatsApp", whatsapp: "7400-0821", waLink: "https://wa.me/97474000821" },
+      { title: "Qatar Office", city: "Doha, Qatar", address: "Level 22, Tornado Tower, West Bay, Doha, Qatar", zip: "00000", whatsappLabel: "Qatar WhatsApp", whatsapp: "7400-0821", waLink: "https://wa.me/97474000821" },
       { title: "Bangladesh Office", city: "Dhaka, Bangladesh", address: "House 13, Road 11, Gudaraghat, Badda", zip: "1212", whatsappLabel: "Bangladesh WhatsApp", whatsapp: "01936-399-433", waLink: "https://wa.me/8801936399433" }
     ]
   },
@@ -152,7 +152,7 @@ const translations: Record<Lang, Translation> = {
     brandTag: "ম্যানপাওয়ার • ভিসা • স্টুডেন্ট কনসালটেন্সি",
     officeTag: "কাতার ও বাংলাদেশে অফিসসহ কনসালটেন্সি এজেন্সি",
     locationsLabel: "লোকেশন",
-    locations: ["দোহা, কাতার — জিপ 00000", "গুদারাঘাট, বাড্ডা, ঢাকা — জিপ 1212"],
+    locations: ["লেভেল ২২, টর্নেডো টাওয়ার, ওয়েস্ট বে, দোহা, কাতার — জিপ 00000", "গুদারাঘাট, বাড্ডা, ঢাকা — জিপ 1212"],
     heroBadge: "কাতার ও বাংলাদেশ কনসালটেন্সি সাপোর্ট",
     heroTitle: "কাতার ম্যানপাওয়ার, ওয়ার্ক ভিসা, ফ্রি ভিসা ও স্টুডেন্ট কনসালটেন্সির জন্য DYUTI Group",
     heroText: "আমরা কাতারের জন্য ম্যানপাওয়ার প্রসেসিং, ডেলিভারি ওয়ার্ক ভিসা প্যাকেজ, ফ্রি ভিসা সাপোর্ট, অ্যাডমিশন গাইডেন্স, স্কলারশিপ কাউন্সেলিং, টিউশন ওয়েভার সাপোর্ট এবং IELTS, GRE, TOEFL কোচিং সাপোর্ট দিয়ে থাকি।",
@@ -202,7 +202,7 @@ const translations: Record<Lang, Translation> = {
       { title: "ফ্রি ভিসা প্যাকেজ", price: "QAR 12,000", description: "কাতারে সুযোগ খুঁজছেন এমন প্রার্থীদের জন্য সুসংগঠিত ভিসা সাপোর্ট প্যাকেজ।", includes: ["ফ্রি ভিসা প্রসেসিং", "QID অন্তর্ভুক্ত", "মেডিকেল অন্তর্ভুক্ত", "BMET কার্ড অন্তর্ভুক্ত", "ফ্লাইট অন্তর্ভুক্ত নয়"] }
     ],
     educationServices: ["ফিনল্যান্ডের জন্য স্টুডেন্ট কনসালটেন্সি", "নেদারল্যান্ডসের জন্য স্টুডেন্ট কনসালটেন্সি", "ইতালির জন্য স্টুডেন্ট কনসালটেন্সি", "অস্ট্রিয়ার জন্য স্টুডেন্ট কনসালটেন্সি", "অ্যাডমিশন কনসালটেন্সি", "স্টুডেন্ট ভিসা কনসালটেন্সি", "স্কলারশিপ কাউন্সেলিং", "IELTS কোচিং", "GRE কোচিং", "TOEFL কোচিং"],
-    manpowerDocs: ["সাদা ব্যাকগ্রাউন্ডে পাসপোর্ট সাইজ ছবির সফটকপি", "পাসপোর্টের ইনফরমেশন পেজের পরিষ্কার স্ক্যান কপি"],
+    manpowerDocs: ["পাসপোর্টের পরিষ্কার স্ক্যান কপি", "সাদা ব্যাকগ্রাউন্ডে পাসপোর্ট সাইজ সফট কপি ছবি", "পাসপোর্টের ইনফরমেশন পেজের পরিষ্কার স্ক্যান কপি"],
     studentDocs: ["ইংরেজি দক্ষতার ডকুমেন্ট", "পাসপোর্টের ইনফরমেশন পেজের পরিষ্কার স্ক্যান কপি", "হাই স্কুলের মার্কশিট, ট্রান্সক্রিপ্ট ও পাবলিক পরীক্ষার সার্টিফিকেট", "ব্যাচেলর ও মাস্টার্সের মার্কশিট, ট্রান্সক্রিপ্ট ও সার্টিফিকেট, যদি থাকে"],
     waiverPackages: [
       { name: "ফুল টিউশন ওয়েভার", price: "QAR 15,000", firstPayment: "স্কলারশিপ সিদ্ধান্তের পর QAR 7,500", secondPayment: "ভিসার পর বাকি QAR 7,500" },
@@ -216,7 +216,7 @@ const translations: Record<Lang, Translation> = {
       { q: "স্টুডেন্ট কনসালটেন্সি প্রসেসিং সাধারণত কত সময় লাগে?", a: "স্টুডেন্ট পথটি গন্তব্য ও প্রতিষ্ঠানের উপর নির্ভর করে প্রায় ৬ মাস থেকে ১ বছর সময় নিতে পারে।" }
     ],
     offices: [
-      { title: "কাতার অফিস", city: "দোহা, কাতার", address: "মাদিনাত সাউথ খালিফা, জোন ৩৪", zip: "00000", whatsappLabel: "কাতার হোয়াটসঅ্যাপ", whatsapp: "7400-0821", waLink: "https://wa.me/97474000821" },
+      { title: "কাতার অফিস", city: "দোহা, কাতার", address: "লেভেল ২২, টর্নেডো টাওয়ার, ওয়েস্ট বে, দোহা, কাতার", zip: "00000", whatsappLabel: "কাতার হোয়াটসঅ্যাপ", whatsapp: "7400-0821", waLink: "https://wa.me/97474000821" },
       { title: "বাংলাদেশ অফিস", city: "ঢাকা, বাংলাদেশ", address: "হাউস ১৩, রোড ১১, গুদারাঘাট, বাড্ডা", zip: "1212", whatsappLabel: "বাংলাদেশ হোয়াটসঅ্যাপ", whatsapp: "01936-399-433", waLink: "https://wa.me/8801936399433" }
     ]
   },
@@ -227,7 +227,7 @@ const translations: Record<Lang, Translation> = {
     brandTag: "القوى العاملة • التأشيرات • الاستشارات الطلابية",
     officeTag: "وكالة استشارية لها مكاتب في قطر وبنغلاديش",
     locationsLabel: "المواقع",
-    locations: ["الدوحة، قطر — الرمز البريدي 00000", "غوداراغات، بادا، دكا — الرمز البريدي 1212"],
+    locations: ["الطابق 22، برج تورنادو، الخليج الغربي، الدوحة، قطر — الرمز البريدي 00000", "غوداراغات، بادا، دكا — الرمز البريدي 1212"],
     heroBadge: "دعم استشاري في قطر وبنغلاديش",
     heroTitle: "مجموعة DYUTI لخدمات القوى العاملة في قطر وتأشيرات العمل والفيزا الحرة والاستشارات الطلابية",
     heroText: "نساعد العملاء في معالجة القوى العاملة لقطر، وباقات تأشيرة العمل للتوصيل، ودعم الفيزا الحرة، والإرشاد في القبول، والاستشارات الخاصة بالمنح، ودعم الإعفاء من الرسوم الدراسية، والتدريب على IELTS وGRE وTOEFL.",
@@ -277,7 +277,7 @@ const translations: Record<Lang, Translation> = {
       { title: "باقة الفيزا الحرة", price: "QAR 12,000", description: "باقة دعم تأشيرة منظمة للمرشحين الباحثين عن فرص في قطر.", includes: ["معالجة الفيزا الحرة", "QID مشمول", "الفحص الطبي مشمول", "بطاقة BMET مشمولة", "تذكرة السفر غير مشمولة"] }
     ],
     educationServices: ["الاستشارات الطلابية لفنلندا", "الاستشارات الطلابية لهولندا", "الاستشارات الطلابية لإيطاليا", "الاستشارات الطلابية للنمسا", "استشارات القبول", "استشارات الفيزا الطلابية", "استشارات المنح", "تدريب IELTS", "تدريب GRE", "تدريب TOEFL"],
-    manpowerDocs: ["صورة بحجم صورة جواز السفر بخلفية بيضاء كنسخة إلكترونية", "نسخة ممسوحة ضوئيًا وواضحة من صفحة المعلومات في جواز السفر"],
+    manpowerDocs: ["نسخة ممسوحة ضوئيًا وواضحة من جواز السفر", "صورة إلكترونية بخلفية بيضاء بحجم صورة جواز السفر", "نسخة ممسوحة ضوئيًا وواضحة من صفحة المعلومات في جواز السفر"],
     studentDocs: ["مستندات إثبات الكفاءة في اللغة الإنجليزية", "نسخة ممسوحة ضوئيًا وواضحة من صفحة المعلومات في جواز السفر", "كشف الدرجات والسجل الأكاديمي وشهادة الامتحانات العامة للمرحلة الثانوية", "كشف الدرجات والسجل الأكاديمي والشهادة للبكالوريوس والماجستير إن وجدت"],
     waiverPackages: [
       { name: "إعفاء كامل من الرسوم", price: "QAR 15,000", firstPayment: "QAR 7,500 بعد قرار المنحة", secondPayment: "المتبقي QAR 7,500 بعد الفيزا" },
@@ -291,7 +291,7 @@ const translations: Record<Lang, Translation> = {
       { q: "كم تستغرق عادة خدمات الاستشارات الطلابية؟", a: "قد يستغرق المسار الطلابي من 6 أشهر إلى سنة بحسب الوجهة والمؤسسة." }
     ],
     offices: [
-      { title: "مكتب قطر", city: "الدوحة، قطر", address: "مدينة جنوب خليفة، المنطقة 34", zip: "00000", whatsappLabel: "واتساب قطر", whatsapp: "7400-0821", waLink: "https://wa.me/97474000821" },
+      { title: "مكتب قطر", city: "الدوحة، قطر", address: "الطابق 22، برج تورنادو، الخليج الغربي، الدوحة، قطر", zip: "00000", whatsappLabel: "واتساب قطر", whatsapp: "7400-0821", waLink: "https://wa.me/97474000821" },
       { title: "مكتب بنغلاديش", city: "دكا، بنغلاديش", address: "المنزل 13، الطريق 11، غوداراغات، بادا", zip: "1212", whatsappLabel: "واتساب بنغلاديش", whatsapp: "01936-399-433", waLink: "https://wa.me/8801936399433" }
     ]
   }
