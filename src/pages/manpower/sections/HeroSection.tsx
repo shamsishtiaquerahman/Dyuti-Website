@@ -1,0 +1,1 @@
+import type { SiteContent } from "@/shared/schemas/content.schema"; import { SectionShell } from "@/shared/layout/SectionShell"; import { SectionTitle } from "@/shared/ui/SectionTitle"; export function HeroSection({ content }: { content: SiteContent }) { return <SectionShell><SectionTitle title={content.manpower.title} description={content.manpower.text} /></SectionShell>; }

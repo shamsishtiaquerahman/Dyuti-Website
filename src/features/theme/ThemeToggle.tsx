@@ -1,0 +1,1 @@
+import { Button } from "@/shared/ui/Button"; export function ThemeToggle({ label, onToggle }: { label: string; onToggle: () => void }) { return <Button variant="ghost" onClick={onToggle}>{label}</Button>; }

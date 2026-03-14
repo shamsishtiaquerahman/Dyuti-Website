@@ -1,0 +1,1 @@
+export function WhatsAppFloat({ label }: { label: string }) { return <a href="https://wa.me/97474000821" className="fixed bottom-5 right-5 rounded-full bg-dyutiTeal px-5 py-3 text-sm font-bold text-slate-950 shadow-[0_18px_45px_rgba(67,182,177,0.35)] transition hover:-translate-y-0.5" rel="noreferrer">{label}</a>; }
