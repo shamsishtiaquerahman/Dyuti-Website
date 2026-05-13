@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en" data-theme="light" data-fonts="serif" data-motion="on">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Student Consultancy — Finland, Netherlands, Italy, Austria · DYUTI Group</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="description" content="Admissions, student visa support, scholarship counselling, tuition waiver guidance, and IELTS/GRE/TOEFL coaching for study in Europe.">
+<meta name="theme-color" content="#1F3D2E">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://dyutigroup.net/og-image.svg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://dyutigroup.net/og-image.svg">
+<meta property="og:url" content="https://dyutigroup.net/student.html">
+<meta property="og:title" content="Student Consultancy — Finland, Netherlands, Italy, Austria · DYUTI Group">
+<meta property="og:description" content="Admissions, student visa support, scholarship counselling, tuition waiver guidance, and IELTS/GRE/TOEFL coaching for study in Europe.">
+<meta property="og:site_name" content="DYUTI Group">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="bn_BD">
+<meta property="og:locale:alternate" content="ar_QA">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Student Consultancy — Finland, Netherlands, Italy, Austria · DYUTI Group">
+<meta name="twitter:description" content="Admissions, student visa support, scholarship counselling, tuition waiver guidance, and IELTS/GRE/TOEFL coaching for study in Europe.">
+<link rel="stylesheet" href="shared/styles.css">
+<style>
+  .page-hero .sun-small { position: absolute; right: -6vw; top: 2vw; width: 34vw; max-width: 440px; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle, var(--ochre-soft) 0%, var(--ochre) 45%, transparent 72%); opacity: .45; filter: blur(2px); pointer-events: none; }
+
+  /* services list */
+  .services-sec { padding: 120px 0; }
+  .services-sec h2 { font-family: var(--display); font-size: clamp(40px,6vw,80px); line-height:1.02; margin-bottom: 40px; max-width: 18ch; }
+  .services-sec em { font-style: italic; color: var(--ochre); }
+  .svc-list { border-top: 1px solid var(--ink); }
+  .svc-row {
+    display: grid; grid-template-columns: 60px 1fr auto;
+    gap: 24px; padding: 24px 0; border-bottom: 1px solid var(--rule);
+    align-items: baseline;
+    transition: padding .3s, background .3s;
+  }
+  .svc-row:hover { background: var(--paper-2); padding-left: 16px; padding-right: 16px; }
+  .svc-row .n { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--muted); }
+  .svc-row .name { font-family: var(--display); font-size: clamp(22px,2.4vw,32px); line-height: 1.2; }
+  .svc-row .name em { font-style: italic; color: var(--ochre); }
+  .svc-row .tag { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); padding: 4px 10px; border: 1px solid var(--rule); border-radius: 999px; }
+
+  /* tuition waiver packages */
+  .waivers { padding: 120px 0; background: var(--ink); color: var(--paper); position: relative; overflow: hidden; }
+  .waivers::before { content: ""; position: absolute; top: -25%; right: -5%; width: 50%; height: 80%; background: radial-gradient(circle, var(--ochre) 0%, transparent 60%); opacity: .25; filter: blur(40px); pointer-events: none; }
+  .waivers .wrap { position: relative; z-index: 1; }
+  .waivers .section-label { color: var(--ochre-soft); }
+  .waivers .section-label::before { background: var(--ochre-soft); }
+  .waivers h2 { font-family: var(--display); font-size: clamp(40px,6vw,80px); line-height:1.02; margin-bottom: 24px; max-width: 20ch; }
+  .waivers em { font-style: italic; color: var(--ochre-soft); }
+  .waivers > .wrap > p { color: #CFC8B5; font-size: 16px; line-height: 1.65; max-width: 54ch; margin: 0 0 56px; }
+
+  .waiver-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+  .waiver {
+    padding: 32px 28px;
+    border: 1px solid rgba(237,230,210,.22);
+    display: flex; flex-direction: column; gap: 16px;
+  }
+  .waiver.primary { background: rgba(224,178,99,.1); border-color: var(--ochre-soft); }
+  .waiver .n { font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em; color: var(--ochre-soft); }
+  .waiver h3 { font-family: var(--display); font-size: 28px; line-height: 1.15; }
+  .waiver h3 em { font-style: italic; color: var(--ochre-soft); }
+  .waiver .price { font-family: var(--display); font-style: italic; font-size: 44px; color: var(--ochre-soft); line-height: 1; padding: 16px 0; border-top: 1px solid rgba(237,230,210,.22); border-bottom: 1px solid rgba(237,230,210,.22); }
+  .waiver .price .alt { font-family: var(--mono); font-style: normal; font-size: 10px; letter-spacing: 0.14em; color: #CFC8B5; display: block; margin-top: 8px; }
+  .waiver .paym { font-size: 14px; line-height: 1.55; color: #CFC8B5; }
+  .waiver .paym b { color: var(--paper); font-weight: 500; display: block; margin-top: 4px; font-family: var(--display); font-size: 15px; }
+
+  /* policies + scholarship rules */
+  .rules { padding: 120px 0; }
+  .rules-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; }
+  .rules h2 { font-family: var(--display); font-size: clamp(32px,4vw,56px); line-height:1.1; margin-bottom: 20px; max-width: 18ch; }
+  .rules em { font-style: italic; color: var(--ochre); }
+  .rules p { color: var(--ink-soft); font-size: 15px; line-height: 1.6; margin: 0 0 32px; max-width: 44ch; }
+  .rulelist { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--ink); }
+  .rulelist li { display: grid; grid-template-columns: 48px 1fr; gap: 12px; padding: 20px 0; border-bottom: 1px solid var(--rule); font-family: var(--display); font-size: 19px; line-height: 1.45; }
+  .rulelist li .n { font-family: var(--mono); font-size: 10px; color: var(--muted); letter-spacing: 0.14em; padding-top: 6px; }
+  .rulelist li b { color: var(--ochre); font-weight: 500; font-style: italic; }
+
+  /* docs + timeline */
+  .timeline-sec { padding: 120px 0; background: var(--paper-2); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  .timeline-sec h2 { font-family: var(--display); font-size: clamp(36px,5vw,72px); line-height:1.05; max-width: 18ch; }
+  .timeline-sec em { font-style: italic; color: var(--ochre); }
+  .timeline-sec > .wrap > p { color: var(--ink-soft); font-size: 16px; line-height: 1.65; max-width: 54ch; margin: 24px 0 48px; }
+  .tl-row { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 0; border-top: 2px solid var(--ink); position: relative; }
+  .tl-step { padding: 32px 24px; border-right: 1px solid var(--rule); position: relative; }
+  .tl-step:last-child { border-right: 0; }
+  .tl-step::before { content: ""; position: absolute; top: -9px; left: 24px; width: 14px; height: 14px; border-radius: 50%; background: var(--paper-2); border: 2px solid var(--ink); }
+  .tl-step .n { font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em; color: var(--muted); margin-bottom: 16px; }
+  .tl-step h3 { font-family: var(--display); font-size: 22px; line-height: 1.2; margin-bottom: 8px; }
+  .tl-step p { font-size: 13px; color: var(--ink-soft); margin: 0; line-height: 1.5; }
+
+  .docs-sec { padding: 120px 0; }
+  .docs-sec h2 { font-family: var(--display); font-size: clamp(32px,4vw,56px); line-height:1.1; margin-bottom: 32px; max-width: 18ch; }
+  .docs-sec em { font-style: italic; color: var(--ochre); }
+  .doclist { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--ink); }
+  .doclist li { display: grid; grid-template-columns: 40px 1fr; gap: 12px; padding: 20px 0; border-bottom: 1px solid var(--rule); font-family: var(--display); font-size: 20px; line-height: 1.4; }
+  .doclist li .n { font-family: var(--mono); font-size: 10px; color: var(--muted); letter-spacing: 0.14em; padding-top: 6px; }
+
+  @media (max-width: 860px) {
+    .waiver-grid { grid-template-columns: 1fr; }
+    .rules-grid { grid-template-columns: 1fr; gap: 32px; }
+    .tl-row { grid-template-columns: 1fr 1fr; }
+    .tl-step { border-bottom: 1px solid var(--rule); }
+    .svc-row { grid-template-columns: 40px 1fr; }
+    .svc-row .tag { display: none; }
+  }
+</style>
+<link rel="canonical" href="https://dyutigroup.net/student.html">
+<link rel="alternate" hreflang="en" href="https://dyutigroup.net/student.html">
+<link rel="alternate" hreflang="bn" href="https://dyutigroup.net/student.html#lang=bn">
+<link rel="alternate" hreflang="ar" href="https://dyutigroup.net/student.html#lang=ar">
+<link rel="alternate" hreflang="x-default" href="https://dyutigroup.net/student.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://dyutigroup.net/#org",
+  "name": "DYUTI Group",
+  "url": "https://dyutigroup.net",
+  "logo": "https://dyutigroup.net/favicon.svg",
+  "sameAs": [],
+  "address": [
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "Level 22, Tornado Tower, West Bay",
+      "addressLocality": "Doha",
+      "addressCountry": "QA"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "House 13, Road 11, Gudaraghat, Badda",
+      "addressLocality": "Dhaka",
+      "postalCode": "1212",
+      "addressCountry": "BD"
+    }
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+974-7400-0821",
+      "contactType": "customer service",
+      "areaServed": "QA",
+      "availableLanguage": [
+        "en",
+        "bn",
+        "ar"
+      ]
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "+880-1936-399-433",
+      "contactType": "customer service",
+      "areaServed": "BD",
+      "availableLanguage": [
+        "en",
+        "bn"
+      ]
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://dyutigroup.net/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Student Consultancy",
+      "item": "https://dyutigroup.net/student.html"
+    }
+  ]
+}
+</script>
+</head>
+<body class="grain" data-page="student">
+<div id="nav-slot"></div>
+
+<section class="page-hero">
+  <div class="sun-small" aria-hidden="true"></div>
+  <div class="wrap" style="position:relative;z-index:2">
+    <div class="eyebrow reveal" data-i18n="eyebrow" data-i18n-html="true"><b>02</b> · Services · Student Consultancy</div>
+    <h1 class="reveal" data-i18n="heroH1" data-i18n-html="true">Admissions, student visa support, <em>scholarships,</em> tuition waiver guidance, and coaching.</h1>
+    <p class="lede reveal" data-i18n="heroLede">
+      Dedicated page for people searching for study abroad consultancy services, tuition
+      waiver support, and scholarship guidance.
+    </p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services-sec">
+  <div class="wrap">
+    <div class="section-label reveal" data-i18n="svcLabel">What we offer</div>
+    <h2 class="reveal" data-i18n="svcTitle" data-i18n-html="true">Ten quiet <em>specialities.</em></h2>
+    <div class="svc-list">
+      <div class="svc-row reveal"><span class="n">01</span><span class="name" data-i18n="s1" data-i18n-html="true">Student consultancy for <em>Finland</em></span><span class="tag" data-i18n="tagCountry">Country</span></div>
+      <div class="svc-row reveal"><span class="n">02</span><span class="name" data-i18n="s2" data-i18n-html="true">Student consultancy for <em>the Netherlands</em></span><span class="tag" data-i18n="tagCountry">Country</span></div>
+      <div class="svc-row reveal"><span class="n">03</span><span class="name" data-i18n="s3" data-i18n-html="true">Student consultancy for <em>Italy</em></span><span class="tag" data-i18n="tagCountry">Country</span></div>
+      <div class="svc-row reveal"><span class="n">04</span><span class="name" data-i18n="s4" data-i18n-html="true">Student consultancy for <em>Austria</em></span><span class="tag" data-i18n="tagCountry">Country</span></div>
+      <div class="svc-row reveal"><span class="n">05</span><span class="name" data-i18n="s5" data-i18n-html="true">Admission <em>consultancy</em></span><span class="tag" data-i18n="tagAdvisory">Advisory</span></div>
+      <div class="svc-row reveal"><span class="n">06</span><span class="name" data-i18n="s6" data-i18n-html="true">Student visa <em>consultancy</em></span><span class="tag" data-i18n="tagAdvisory">Advisory</span></div>
+      <div class="svc-row reveal"><span class="n">07</span><span class="name" data-i18n="s7" data-i18n-html="true">Scholarship <em>counselling</em></span><span class="tag" data-i18n="tagAdvisory">Advisory</span></div>
+      <div class="svc-row reveal"><span class="n">08</span><span class="name" data-i18n="s8" data-i18n-html="true"><em>IELTS</em> coaching</span><span class="tag" data-i18n="tagCoaching">Coaching</span></div>
+      <div class="svc-row reveal"><span class="n">09</span><span class="name" data-i18n="s9" data-i18n-html="true"><em>GRE</em> coaching</span><span class="tag" data-i18n="tagCoaching">Coaching</span></div>
+      <div class="svc-row reveal"><span class="n">10</span><span class="name" data-i18n="s10" data-i18n-html="true"><em>TOEFL</em> coaching</span><span class="tag" data-i18n="tagCoaching">Coaching</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TUITION WAIVER -->
+<section class="waivers">
+  <div class="wrap">
+    <div class="section-label reveal" data-i18n="wvLabel">Tuition waiver pricing</div>
+    <h2 class="reveal" data-i18n="wvTitle" data-i18n-html="true">Scholarship and tuition waiver <em>consultancy pricing.</em></h2>
+    <p class="reveal" data-i18n="wvIntro">This section explains your tuition waiver service model, payment timing, and important conditions for clients.</p>
+    <div class="waiver-grid">
+      <div class="waiver primary reveal">
+        <div class="n" data-i18n="w1n">§ 01 · Featured</div>
+        <h3 data-i18n="w1h" data-i18n-html="true">Full Tuition <em>Waiver</em></h3>
+        <div class="price">QAR 15,000<span class="alt">≈ BDT 500,000</span></div>
+        <div class="paym" data-i18n="w1p1" data-i18n-html="true">First payment<b>QAR 7,500 after scholarship decision</b></div>
+        <div class="paym" data-i18n="w1p2" data-i18n-html="true">Second payment<b>Remaining QAR 7,500 after visa</b></div>
+      </div>
+      <div class="waiver reveal">
+        <div class="n">§ 02</div>
+        <h3 data-i18n="w2h" data-i18n-html="true">Partial <em>Waiver</em></h3>
+        <div class="price">QAR 6,000<span class="alt">≈ BDT 200,000</span></div>
+        <div class="paym" data-i18n="w2p1" data-i18n-html="true">First payment<b>QAR 3,000 after scholarship decision</b></div>
+        <div class="paym" data-i18n="w2p2" data-i18n-html="true">Second payment<b>Remaining QAR 3,000 after visa</b></div>
+      </div>
+      <div class="waiver reveal">
+        <div class="n">§ 03</div>
+        <h3 data-i18n="w3h" data-i18n-html="true">No <em>Waiver</em> Package</h3>
+        <div class="price">QAR 1,500<span class="alt">≈ BDT 50,000</span></div>
+        <div class="paym" data-i18n="w3p1" data-i18n-html="true">First payment<b>QAR 750 after offer letter</b></div>
+        <div class="paym" data-i18n="w3p2" data-i18n-html="true">Second payment<b>Remaining QAR 750 after visa</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POLICIES + SCHOLARSHIP RULES -->
+<section class="rules">
+  <div class="wrap rules-grid">
+    <div class="reveal">
+      <div class="section-label" data-i18n="condLabel">Important conditions</div>
+      <h2 data-i18n="condTitle" data-i18n-html="true">Conditions, <em>plainly stated.</em></h2>
+      <p data-i18n="condIntro">Please read carefully before engaging us for tuition waiver consultancy.</p>
+      <ul class="rulelist">
+        <li><span class="n">§ 1</span><span data-i18n="cond1">We do not guarantee visa approval, and if visa is not granted, no responsibility is taken for that decision.</span></li>
+        <li><span class="n">§ 2</span><span data-i18n="cond2">If full tuition waiver is not granted but the student wants to continue, the process can continue under the partial waiver or no waiver package as applicable.</span></li>
+        <li><span class="n">§ 3</span><span data-i18n="cond3" data-i18n-html="true">If scholarship is less than 15%, it is considered as <b>no tuition waiver package.</b></span></li>
+      </ul>
+    </div>
+
+    <div class="reveal">
+      <div class="section-label" data-i18n="schLabel">Scholarship rules</div>
+      <h2 data-i18n="schTitle" data-i18n-html="true">Country-level <em>eligibility rules.</em></h2>
+      <p data-i18n="schIntro">Important tuition waiver conditions and country-level eligibility rules are shown below.</p>
+      <ul class="rulelist">
+        <li><span class="n">FI</span><span data-i18n="sch1" data-i18n-html="true"><b>Finland</b> — full scholarship consultancy only at PhD level.</span></li>
+        <li><span class="n">NL</span><span data-i18n="sch2" data-i18n-html="true"><b>Netherlands</b> — full scholarship consultancy not available at any level.</span></li>
+        <li><span class="n">AT·IT</span><span data-i18n="sch3" data-i18n-html="true"><b>Austria and Italy</b> — full scholarship consultancy available at all levels.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="timeline-sec">
+  <div class="wrap">
+    <div class="section-label reveal" data-i18n="tlLabel">Timeline</div>
+    <h2 class="reveal" data-i18n="tlTitle" data-i18n-html="true">Expected student consultancy <em>timeline.</em></h2>
+    <p class="reveal" data-i18n="tlIntro">The student pathway depends on destination, intake, and institution. On average it spans around 6 months to 1 year.</p>
+    <div class="tl-row">
+      <div class="tl-step reveal"><div class="n" data-i18n="tl1n">Month 1–2</div><h3 data-i18n="tl1h" data-i18n-html="true">Profile &amp; shortlist</h3><p data-i18n="tl1p">Evaluate profile, shortlist universities, and prepare English proficiency.</p></div>
+      <div class="tl-step reveal"><div class="n" data-i18n="tl2n">Month 2–4</div><h3 data-i18n="tl2h">Applications</h3><p data-i18n="tl2p">Admission applications, scholarship counselling, document packaging.</p></div>
+      <div class="tl-step reveal"><div class="n" data-i18n="tl3n">Month 4–8</div><h3 data-i18n="tl3h" data-i18n-html="true">Offer &amp; scholarship</h3><p data-i18n="tl3p">Offer letters received; scholarship decisions confirmed.</p></div>
+      <div class="tl-step reveal"><div class="n" data-i18n="tl4n">Month 8–12</div><h3 data-i18n="tl4h" data-i18n-html="true">Visa &amp; departure</h3><p data-i18n="tl4p">Student visa consultancy, pre-departure, and onboarding.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DOCS -->
+<section class="docs-sec">
+  <div class="wrap">
+    <div class="section-label reveal" data-i18n="docsLabel">Documents</div>
+    <h2 class="reveal" data-i18n="docsTitle" data-i18n-html="true">Student Consultancy <em>Documents.</em></h2>
+    <ul class="doclist">
+      <li class="reveal"><span class="n">i.</span><span data-i18n="doc1">English proficiency documents</span></li>
+      <li class="reveal"><span class="n">ii.</span><span data-i18n="doc2">Clear scanned copy of the information page of the passport</span></li>
+      <li class="reveal"><span class="n">iii.</span><span data-i18n="doc3">High school marksheet, transcript, and certificate of public exams</span></li>
+      <li class="reveal"><span class="n">iv.</span><span data-i18n="doc4">Bachelor's and Master's marksheet, transcript, and certificate, if available</span></li>
+    </ul>
+  </div>
+</section>
+
+<section style="padding:120px 0;background:var(--paper-2);border-top:1px solid var(--rule)">
+  <div class="wrap cta-split">
+    <div class="reveal">
+      <div class="section-label" style="margin-bottom:16px" data-i18n="ctaLabel">Begin your journey</div>
+      <h2 data-i18n="ctaTitle" data-i18n-html="true" style="font-family:var(--display);font-size:clamp(40px,6vw,88px);line-height:1;letter-spacing:-0.02em">
+        A short conversation, <em style="font-style:italic;color:var(--ochre)">first.</em>
+      </h2>
+    </div>
+    <div class="reveal" style="display:flex;flex-wrap:wrap;gap:12px">
+      <a data-wa="qa" href="#" target="_blank" rel="noopener" class="btn primary"><span data-i18n="ctaQatar">Qatar · 7400-0821</span> <span class="arrow">→</span></a>
+      <a data-wa="bd" href="#" target="_blank" rel="noopener" class="btn"><span data-i18n="ctaBd">Bangladesh · 01936-399-433</span> <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<div id="footer-slot"></div>
+<script type="application/json" id="page-i18n">
+{
+  "bn": {
+    "eyebrow": "<b>০২</b> · সেবাসমূহ · স্টুডেন্ট কনসালটেন্সি",
+    "heroH1": "অ্যাডমিশন, স্টুডেন্ট ভিসা সাপোর্ট, <em>স্কলারশিপ,</em> টিউশন ওয়েভার গাইডেন্স এবং কোচিং।",
+    "heroLede": "স্টাডি অ্যাব্রড কনসালটেন্সি, টিউশন ওয়েভার সাপোর্ট এবং স্কলারশিপ গাইডেন্স খোঁজেন এমন শিক্ষার্থীদের জন্য নিবেদিত পেজ।",
+    "svcLabel": "আমরা যা দিই",
+    "svcTitle": "দশটি <em>বিশেষজ্ঞতা।</em>",
+    "s1": "<em>ফিনল্যান্ড</em>-এর জন্য স্টুডেন্ট কনসালটেন্সি",
+    "s2": "<em>নেদারল্যান্ডস</em>-এর জন্য স্টুডেন্ট কনসালটেন্সি",
+    "s3": "<em>ইতালি</em>-র জন্য স্টুডেন্ট কনসালটেন্সি",
+    "s4": "<em>অস্ট্রিয়া</em>-র জন্য স্টুডেন্ট কনসালটেন্সি",
+    "s5": "অ্যাডমিশন <em>কনসালটেন্সি</em>",
+    "s6": "স্টুডেন্ট ভিসা <em>কনসালটেন্সি</em>",
+    "s7": "স্কলারশিপ <em>কাউন্সেলিং</em>",
+    "s8": "<em>IELTS</em> কোচিং",
+    "s9": "<em>GRE</em> কোচিং",
+    "s10": "<em>TOEFL</em> কোচিং",
+    "tagCountry": "দেশ",
+    "tagAdvisory": "পরামর্শ",
+    "tagCoaching": "কোচিং",
+    "wvLabel": "টিউশন ওয়েভার মূল্য",
+    "wvTitle": "স্কলারশিপ ও টিউশন ওয়েভার <em>কনসালটেন্সির মূল্য।</em>",
+    "wvIntro": "এই অংশে টিউশন ওয়েভার সার্ভিস মডেল, পেমেন্ট সময় এবং ক্লায়েন্টদের জন্য গুরুত্বপূর্ণ শর্ত ব্যাখ্যা করা হয়েছে।",
+    "w1n": "§ ০১ · ফিচার্ড",
+    "w1h": "পূর্ণ টিউশন <em>ওয়েভার</em>",
+    "w1p1": "প্রথম পেমেন্ট<b>স্কলারশিপ সিদ্ধান্তের পর QAR ৭,৫০০</b>",
+    "w1p2": "দ্বিতীয় পেমেন্ট<b>ভিসার পর বাকি QAR ৭,৫০০</b>",
+    "w2h": "আংশিক <em>ওয়েভার</em>",
+    "w2p1": "প্রথম পেমেন্ট<b>স্কলারশিপ সিদ্ধান্তের পর QAR ৩,০০০</b>",
+    "w2p2": "দ্বিতীয় পেমেন্ট<b>ভিসার পর বাকি QAR ৩,০০০</b>",
+    "w3h": "কোনো <em>ওয়েভার</em> নেই প্যাকেজ",
+    "w3p1": "প্রথম পেমেন্ট<b>অফার লেটারের পর QAR ৭৫০</b>",
+    "w3p2": "দ্বিতীয় পেমেন্ট<b>ভিসার পর বাকি QAR ৭৫০</b>",
+    "condLabel": "গুরুত্বপূর্ণ শর্ত",
+    "condTitle": "শর্ত, <em>সরলভাবে।</em>",
+    "condIntro": "টিউশন ওয়েভার কনসালটেন্সির জন্য আমাদের সাথে চুক্তির আগে মনোযোগ সহকারে পড়ুন।",
+    "cond1": "আমরা ভিসা অনুমোদনের গ্যারান্টি দিই না, এবং ভিসা না হলে সেই সিদ্ধান্তের জন্য কোনো দায়দায়িত্ব নেওয়া হয় না।",
+    "cond2": "পূর্ণ টিউশন ওয়েভার না পেলেও শিক্ষার্থী চালিয়ে যেতে চাইলে, আংশিক বা কোনো ওয়েভার নেই প্যাকেজের অধীনে প্রক্রিয়া চলিয়ে নেওয়া যাবে।",
+    "cond3": "স্কলারশিপ ১৫%-এর কম হলে তা <b>কোনো টিউশন ওয়েভার নেই প্যাকেজ হিসেবে গণ্য হবে।</b>",
+    "schLabel": "স্কলারশিপ নিয়ম",
+    "schTitle": "দেশভিত্তিক <em>যোগ্যতার নিয়ম।</em>",
+    "schIntro": "গুরুত্বপূর্ণ টিউশন ওয়েভার শর্ত এবং দেশভিত্তিক যোগ্যতার নিয়ম নিচে দেখানো হল।",
+    "sch1": "<b>ফিনল্যান্ড</b> — পূর্ণ স্কলারশিপ কনসালটেন্সি শুধু PhD পর্যায়ে।",
+    "sch2": "<b>নেদারল্যান্ডস</b> — পূর্ণ স্কলারশিপ কনসালটেন্সি কোনো পর্যায়ে নেই।",
+    "sch3": "<b>অস্ট্রিয়া ও ইতালি</b> — সকল পর্যায়ে পূর্ণ স্কলারশিপ কনসালটেন্সি পাওয়া যায়।",
+    "tlLabel": "সময়সীমা",
+    "tlTitle": "প্রত্যাশিত স্টুডেন্ট কনসালটেন্সি <em>সময়সীমা।</em>",
+    "tlIntro": "শিক্ষার্থীর পথ গন্তব্য, ইনটেক এবং প্রতিষ্ঠানের উপর নির্ভর করে। গড়ে এটি প্রায় ৬ মাস থেকে ১ বছর পর্যন্ত সময় নেয়।",
+    "tl1n": "মাস ১–২",
+    "tl1h": "প্রোফাইল ও শর্টলিস্ট",
+    "tl1p": "প্রোফাইল মূল্যায়ন, বিশ্ববিদ্যালয় শর্টলিস্ট এবং ইংরেজি দক্ষতা প্রস্তুতি।",
+    "tl2n": "মাস ২–৪",
+    "tl2h": "আবেদন",
+    "tl2p": "অ্যাডমিশন আবেদন, স্কলারশিপ কাউন্সেলিং, ডকুমেন্ট প্যাকেজিং।",
+    "tl3n": "মাস ৪–৮",
+    "tl3h": "অফার ও স্কলারশিপ",
+    "tl3p": "অফার লেটার প্রাপ্তি; স্কলারশিপ সিদ্ধান্ত নিশ্চিত।",
+    "tl4n": "মাস ৮–১২",
+    "tl4h": "ভিসা ও যাত্রা",
+    "tl4p": "স্টুডেন্ট ভিসা কনসালটেন্সি, প্রাক-যাত্রা এবং অনবোর্ডিং।",
+    "docsLabel": "কাগজপত্র",
+    "docsTitle": "স্টুডেন্ট কনসালটেন্সি <em>কাগজপত্র।</em>",
+    "doc1": "ইংরেজি দক্ষতার ডকুমেন্ট",
+    "doc2": "পাসপোর্টের তথ্য পৃষ্ঠার স্পষ্ট স্ক্যান কপি",
+    "doc3": "হাই স্কুলের মার্কশিট, ট্রান্সক্রিপ্ট এবং পাবলিক পরীক্ষার সার্টিফিকেট",
+    "doc4": "স্নাতক ও স্নাতকোত্তর মার্কশিট, ট্রান্সক্রিপ্ট এবং সার্টিফিকেট, যদি থাকে",
+    "ctaLabel": "যাত্রা শুরু করুন",
+    "ctaTitle": "প্রথমে, <em>একটি সংক্ষিপ্ত আলাপ।</em>",
+    "ctaQatar": "কাতার · 7400-0821",
+    "ctaBd": "বাংলাদেশ · 01936-399-433"
+  },
+  "ar": {
+    "eyebrow": "<b>٠٢</b> · الخدمات · الاستشارات الطلابية",
+    "heroH1": "القبول، دعم التأشيرة الطلابية، <em>المنح،</em> توجيه الإعفاء من الرسوم، والتدريب.",
+    "heroLede": "صفحة مخصصة للباحثين عن استشارات الدراسة في الخارج، ودعم الإعفاء من الرسوم، وتوجيه المنح.",
+    "svcLabel": "ما نقدمه",
+    "svcTitle": "عشر <em>تخصصات.</em>",
+    "s1": "استشارات طلابية لـ<em>فنلندا</em>",
+    "s2": "استشارات طلابية لـ<em>هولندا</em>",
+    "s3": "استشارات طلابية لـ<em>إيطاليا</em>",
+    "s4": "استشارات طلابية لـ<em>النمسا</em>",
+    "s5": "استشارات <em>القبول</em>",
+    "s6": "استشارات <em>التأشيرة الطلابية</em>",
+    "s7": "<em>إرشاد</em> المنح",
+    "s8": "تدريب <em>IELTS</em>",
+    "s9": "تدريب <em>GRE</em>",
+    "s10": "تدريب <em>TOEFL</em>",
+    "tagCountry": "دولة",
+    "tagAdvisory": "استشارة",
+    "tagCoaching": "تدريب",
+    "wvLabel": "أسعار الإعفاء من الرسوم",
+    "wvTitle": "أسعار <em>استشارات المنح والإعفاء.</em>",
+    "wvIntro": "يوضح هذا القسم نموذج خدمة الإعفاء من الرسوم وتوقيت الدفع والشروط المهمة للعملاء.",
+    "w1n": "§ ٠١ · مميزة",
+    "w1h": "<em>إعفاء</em> كامل من الرسوم",
+    "w1p1": "الدفعة الأولى<b>QAR ٧٬٥٠٠ بعد قرار المنحة</b>",
+    "w1p2": "الدفعة الثانية<b>المتبقي QAR ٧٬٥٠٠ بعد التأشيرة</b>",
+    "w2h": "<em>إعفاء</em> جزئي",
+    "w2p1": "الدفعة الأولى<b>QAR ٣٬٠٠٠ بعد قرار المنحة</b>",
+    "w2p2": "الدفعة الثانية<b>المتبقي QAR ٣٬٠٠٠ بعد التأشيرة</b>",
+    "w3h": "حزمة بدون <em>إعفاء</em>",
+    "w3p1": "الدفعة الأولى<b>QAR ٧٥٠ بعد خطاب القبول</b>",
+    "w3p2": "الدفعة الثانية<b>المتبقي QAR ٧٥٠ بعد التأشيرة</b>",
+    "condLabel": "شروط مهمة",
+    "condTitle": "الشروط، <em>بوضوح.</em>",
+    "condIntro": "يرجى القراءة بعناية قبل التعاقد معنا لاستشارات الإعفاء.",
+    "cond1": "لا نضمن الموافقة على التأشيرة، وإذا لم تُمنح التأشيرة، فلا نتحمل أي مسؤولية عن ذلك القرار.",
+    "cond2": "إذا لم يُمنح الإعفاء الكامل ورغب الطالب بالاستمرار، يمكن متابعة العملية تحت حزمة الإعفاء الجزئي أو بدون إعفاء حسب الاقتضاء.",
+    "cond3": "إذا كانت المنحة أقل من ١٥%، تُعتبر <b>حزمة بدون إعفاء.</b>",
+    "schLabel": "قواعد المنح",
+    "schTitle": "قواعد <em>الأهلية حسب الدولة.</em>",
+    "schIntro": "يتم عرض شروط الإعفاء المهمة وقواعد الأهلية حسب الدولة أدناه.",
+    "sch1": "<b>فنلندا</b> — استشارات المنحة الكاملة فقط في مرحلة الدكتوراه.",
+    "sch2": "<b>هولندا</b> — استشارات المنحة الكاملة غير متاحة في أي مرحلة.",
+    "sch3": "<b>النمسا وإيطاليا</b> — استشارات المنحة الكاملة متاحة في جميع المراحل.",
+    "tlLabel": "الجدول الزمني",
+    "tlTitle": "الجدول الزمني المتوقع للاستشارات <em>الطلابية.</em>",
+    "tlIntro": "يعتمد المسار الطلابي على الوجهة والفصل الدراسي والمؤسسة. يمتد في المتوسط حوالي ٦ أشهر إلى سنة.",
+    "tl1n": "الشهر ١–٢",
+    "tl1h": "الملف الشخصي والقائمة المختصرة",
+    "tl1p": "تقييم الملف الشخصي، وإعداد قائمة الجامعات، وتجهيز إثبات إجادة الإنجليزية.",
+    "tl2n": "الشهر ٢–٤",
+    "tl2h": "الطلبات",
+    "tl2p": "طلبات القبول، وإرشاد المنح، وتجهيز المستندات.",
+    "tl3n": "الشهر ٤–٨",
+    "tl3h": "العرض والمنحة",
+    "tl3p": "استلام خطابات القبول؛ تأكيد قرارات المنح.",
+    "tl4n": "الشهر ٨–١٢",
+    "tl4h": "التأشيرة والسفر",
+    "tl4p": "استشارات التأشيرة الطلابية، ما قبل السفر، والانضمام.",
+    "docsLabel": "المستندات",
+    "docsTitle": "<em>مستندات</em> الاستشارات الطلابية.",
+    "doc1": "وثائق إثبات إجادة الإنجليزية",
+    "doc2": "نسخة ممسوحة واضحة لصفحة معلومات جواز السفر",
+    "doc3": "كشف درجات الثانوية والنسخ الرسمية وشهادات الامتحانات العامة",
+    "doc4": "كشف درجات البكالوريوس والماجستير والنسخ والشهادات، إن وجدت",
+    "ctaLabel": "ابدأ رحلتك",
+    "ctaTitle": "محادثة قصيرة، <em>أولاً.</em>",
+    "ctaQatar": "قطر · 7400-0821",
+    "ctaBd": "بنغلاديش · 01936-399-433"
+  }
+}
+</script>
+<script defer src="shared/layout.js"></script>
+</body>
+</html>
